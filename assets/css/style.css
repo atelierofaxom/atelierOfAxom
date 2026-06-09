@@ -1,0 +1,420 @@
+/* CSS Stylesheet for Atelier of Axom */
+
+:root {
+    --primary-gold: #C5A880;
+    --accent-gold-dark: #8A6E45;
+    --deep-green: #1C3322;
+    --cream-light: #F7F4EF;
+    --cream-dark: #F0EAE1;
+    --text-dark: #2B2A27;
+    --text-muted: #6A6864;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Jost', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--cream-light);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar & Header Custom Design */
+.header-nav {
+    background-color: rgba(247, 244, 239, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.brand-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-title {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+
+.brand-subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--accent-gold-dark);
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 0;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--accent-gold-dark);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-gold-dark) !important;
+}
+
+.nav-icon-link {
+    color: var(--text-dark);
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.nav-icon-link:hover {
+    color: var(--accent-gold-dark);
+}
+
+/* Hero Section Design */
+.hero-section {
+    height: 90vh;
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-content-box {
+    color: #ffffff;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.hero-divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-gold);
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: clamp(14px, 2vw, 17px);
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 480px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Movement & About Section */
+.bg-cream-light {
+    background-color: var(--cream-light);
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--accent-gold-dark);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.section-heading {
+    font-family: var(--font-heading);
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--text-dark);
+    line-height: 1.3;
+}
+
+.section-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.movement-img-card {
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-tall {
+    height: 380px;
+}
+
+/* Philosophy Cards Section */
+.bg-cream-dark {
+    background-color: var(--cream-dark);
+}
+
+.philosophy-col {
+    padding: 20px;
+}
+
+.philosophy-title {
+    font-family: var(--font-heading);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.philosophy-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+/* Commitment Section (Deep Green Background) */
+.bg-deep-green {
+    background-color: var(--deep-green);
+}
+
+.commitment-main-title {
+    font-family: var(--font-heading);
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 500;
+}
+
+.commitment-divider {
+    width: 40px;
+    height: 1.5px;
+    background-color: var(--primary-gold);
+    margin: 15px 0 20px 0;
+}
+
+.commitment-main-desc {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.commitment-pillar-card {
+    padding: 15px 10px;
+}
+
+.pillar-title {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.pillar-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+/* Impact Counters Section */
+.impact-section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(26px, 4vw, 34px);
+    position: relative;
+    display: inline-block;
+    color: var(--text-dark);
+}
+
+.impact-section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1.5px;
+    background-color: var(--accent-gold-dark);
+    bottom: -10px;
+    left: 25%;
+}
+
+.stat-counter-box {
+    padding: 10px;
+}
+
+.stat-icon {
+    font-size: 20px;
+    color: var(--accent-gold-dark);
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.stat-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+/* Decorative side elements */
+.decor-pattern {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+}
+
+.left-decor {
+    left: -20px;
+    bottom: -20px;
+    transform: rotate(45deg);
+}
+
+.right-decor {
+    right: -20px;
+    top: -20px;
+}
+
+/* Footer CTA Banner Call to Action */
+.cta-banner {
+    height: 40vh;
+    min-height: 280px;
+    background-size: cover;
+    background-position: left center;
+}
+
+.cta-left-block {
+    background-color: rgba(247, 244, 239, 0.92);
+    backdrop-filter: blur(5px);
+}
+
+.cta-title {
+    font-family: var(--font-heading);
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--text-dark);
+    line-height: 1.3;
+}
+
+.btn-meet {
+    background-color: var(--deep-green);
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.btn-meet:hover {
+    background-color: #112015;
+}
+
+/* Main Footer styling */
+.footer-heading {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.footer-links-list li {
+    margin-bottom: 10px;
+}
+
+.footer-links-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links-list a:hover {
+    color: var(--accent-gold-dark);
+}
+
+.footer-socials a {
+    color: var(--text-dark);
+    font-size: 16px;
+    margin-right: 18px;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-gold-dark);
+}
+
+.footer-email-text {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.footer-promise-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.copyright-text {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+/* Precise Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--cream-light);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+    .hero-section {
+        height: 75vh;
+    }
+    .card-tall {
+        height: 260px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-tall {
+        height: 150px;
+    }
+    .philosophy-col {
+        border-bottom: 1px solid rgba(138, 110, 69, 0.1);
+    }
+    .philosophy-col:last-child {
+        border-bottom: none;
+    }
+}
