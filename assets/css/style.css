@@ -534,30 +534,23 @@ box-shadow: 0 15px 40px rgba(43, 42, 39, 0.03);
 
 @media (max-width: 767.98px) {
  .hero-section {
- /* 1. Force the image to cover the full section area dynamically */
  background-size: cover !important;
+ background-position: 20% center !important;
  
- /* 2. Push the focal point to the right side where the premium tea set sits */
- background-position: 78% center !important;
- 
- /* 3. Give the section a fixed height so it feels like a native mobile app header */
  height: 85vh !important;
  min-height: 520px !important;
  
- /* 4. Reset padding spaces to center your text neatly on screen */
  padding-top: 100px !important;
  padding-bottom: 20px !important;
  }
 
  .hero-content-box {
- /* Ensure text box stays completely transparent and handles full width */
  background: transparent !important;
  margin-top: 0 !important;
  padding: 0 !important;
  }
 
  .hero-title {
- /* Keep text crisp white with a subtle text shadow for rich readability */
  color: #ffffff !important;
  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
  font-size: 32px !important;
