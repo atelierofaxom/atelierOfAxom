@@ -118,6 +118,7 @@ body {
 .hero-title {
     font-family: var(--font-heading);
     font-size: clamp(32px, 5vw, 54px);
+    color: white;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -133,7 +134,7 @@ body {
 
 .hero-text {
     font-size: clamp(18px, 5vw, 20px);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
     max-width: 480px;
     text-decoration: ;
@@ -312,14 +313,16 @@ body {
 /* Footer CTA Banner Call to Action */
 .cta-banner {
     height: 40vh;
-    min-height: 280px;
     background-size: cover;
-    background-position: left center;
 }
 
+.cta-image{
+    max-width: 100vw;
+    max-width: 60vw
+}
 .cta-left-block {
-    background-color: rgba(247, 244, 239, 0.92);
-    backdrop-filter: blur(5px);
+    background-color: rgba(247, 244, 239, 0.70);
+    backdrop-filter: blur(0px);
 }
 
 .cta-title {
@@ -428,140 +431,209 @@ body {
     }
 }
 
-/* Contact Form Section Styling */
 .contact-form-section {
-position: relative;
-background-color: var(--cream-light);
-padding-bottom: 5rem !important;
+    position: relative;
+    background-color: var(--cream-light);
+    padding-bottom: 5rem !important;
 }
 
 .form-embed-container {
-background: #ffffff;
-padding: 20px;
-border-radius: 16px;
-border: 1px solid rgba(197, 168, 128, 0.25); /* Light primary gold accent border */
-box-shadow: 0 15px 40px rgba(43, 42, 39, 0.04); /* Soft premium shadow */
-overflow: hidden;
-transition: transform 0.3s ease;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 168, 128, 0.25); /* Light primary gold accent border */
+    box-shadow: 0 15px 40px rgba(43, 42, 39, 0.04); /* Soft premium shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .form-embed-container:hover {
-transform: translateY(-2px);
-}
-
-/* Smooth responsiveness adjustments for smaller screens */
-@media (max-width: 767.98px) {
-.form-embed-container {
-padding: 10px;
-border-radius: 12px;
-}
+    transform: translateY(-2px);
 }
 
 
-
-/* Premium Form Toggle Framework */
 .form-toggle-wrapper {
-position: relative;
-display: flex;
-background-color: var(--cream-dark);
-border: 1px solid rgba(197, 168, 128, 0.3);
-border-radius: 30px;
-padding: 4px;
-width: 320px;
-max-width: 100%;
+    position: relative;
+    display: flex;
+    background-color: var(--cream-dark);
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    border-radius: 30px;
+    padding: 4px;
+    width: 320px;
+    max-width: 100%;
 }
 
 .toggle-btn {
-position: relative;
-flex: 1;
-background: none;
-border: none;
-outline: none;
-font-family: var(--font-body);
-font-size: 13.5px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-color: var(--text-muted);
-padding: 10px 0;
-z-index: 2;
-transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    padding: 10px 0;
+    z-index: 2;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .toggle-btn.active {
-color: #ffffff !important;
+    color: #ffffff !important;
 }
 
 .toggle-slider {
-position: absolute;
-top: 4px;
-left: 4px;
-width: calc(50% - 4px);
-height: calc(100% - 8px);
-background-color: var(--deep-green);
-border-radius: 26px;
-z-index: 1;
-transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    background-color: var(--deep-green);
+    border-radius: 26px;
+    z-index: 1;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Logic to slide the background pill over */
 .form-toggle-wrapper.vendor-active .toggle-slider {
-transform: translateX(100%);
+    transform: translateX(100%);
 }
 
-/* Visibility toggling for the form frames */
 .form-pane {
-display: none;
-opacity: 0;
-transition: opacity 0.4s ease;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .form-pane.active {
-display: block;
-opacity: 1;
+    display: block;
+    opacity: 1;
 }
 
-/* Clean Form Wrapper Border */
 .form-embed-container {
-background: #ffffff;
-padding: 15px;
-border-radius: 16px;
-border: 1px solid rgba(197, 168, 128, 0.2);
-box-shadow: 0 15px 40px rgba(43, 42, 39, 0.03);
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 168, 128, 0.2);
+    box-shadow: 0 15px 40px rgba(43, 42, 39, 0.03);
 }
+.hero-premium-box {
+    background: rgba(28, 51, 34, 0.45); 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px); 
+    padding: 10px 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 168, 128, 0.25);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+
+
+/* Custom Fonts and Typography Hooks */
+.serif-font {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 400;
+    color: #1c221e; /* Sophisticated deep dark green-black */
+}
+
+/* Base Section Styling */
+.premium-story-section {
+    background-color: #F4F3F0; /* Soft, upscale linen/cream background color */
+}
+
+/* The Main Background Container Box */
+.story-canvas-box {
+    background: #EAE8E3; /* Slightly darker cream to frame the white text area */
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Left Sidebar Pillar Box */
+.story-sidebar {
+    background-color: #EAE8E3; /* Seamlessly blends into container background */
+    border-right: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.story-meta-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: #8A857C;
+    font-weight: 600;
+}
+
+.story-main-title {
+    font-size: 1.85rem;
+    line-height: 1.35;
+}
+
+/* Right Content Area Box */
+.story-content-body {
+    background-color: #FFFFFF !important;
+}
+
+/* Long Text Formatting for Maximum Readability */
+.story-lead {
+    font-size: 1.130rem;
+    line-height: 2;
+    color: #2c3531;
+    font-weight: 400;
+}
+
+.story-paragraph {
+    font-size: 0.975rem;
+    line-height: 1.9;
+    color: grey;
+    text-align: justify; /* Gives it that high-end textbook/magazine feel */
+    text-justify: inter-word;
+}
+
+/* Desktop Responsive Enhancements */
+@media (min-width: 768px) {
+    .story-sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px; /* Text stays neatly tracked as you scroll down long paragraphs */
+        height: max-content;
+    }
+
+    .story-main-title {
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+
+
 
 
 
 @media (max-width: 767.98px) {
-   .hero-section {
+    .hero-title {
+        line-height: 1.6;
+    }
+    .form-embed-container {
+        padding: 10px;
+        border-radius: 12px;
+    }
+    .hero-content-box {
+     background: transparent !important;
+     margin-top: 0 !important;
+     padding: 0 !important;
+ }
+ .hero-section {
     background-size: cover; !important;
-       background-position: 10% center !important;
-       height: 85vh !important;
-       min-height: 520px !important;
-       padding-top: 100px !important;
-       padding-bottom: 20px !important;
-   }
-
-   .hero-content-box {
-       background: transparent !important;
-       margin-top: 0 !important;
-       padding: 0 !important;
-   }
-
-   .hero-title {
-       color: #ffffff !important;
-       text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
-       font-size: 32px !important;
-   }
-
-   .hero-text {
-       color: rgba(255, 255, 255, 0.95) !important;
-       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
-       font-size: 18px !important;
-   }
 }
-
-
-
+.hero-premium-box {
+    background: rgba(24, 43, 29, 0.65) !important;
+    backdrop-filter: blur(1px) !important;
+    padding: 10px 25px !important;
+    border-radius: 16px !important;
+}
+}
 
 
