@@ -102,6 +102,7 @@ body {
 
 /* Hero Section Design */
 .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)), url('../../resources/background_photos/bg1.png');
     height: 90vh;
     min-height: 550px;
     background-size: cover;
@@ -590,8 +591,9 @@ body {
     text-justify: inter-word;
 }
 
-/* Desktop Responsive Enhancements */
-@media (min-width: 768px) {
+
+
+@media (max-width: 767.98px) {
     .story-sidebar {
         position: -webkit-sticky;
         position: sticky;
@@ -602,17 +604,6 @@ body {
     .story-main-title {
         font-size: 2.2rem;
     }
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 767.98px) {
     .hero-title {
         line-height: 1.6;
     }
@@ -621,19 +612,20 @@ body {
         border-radius: 12px;
     }
     .hero-content-box {
-     background: transparent !important;
-     margin-top: 0 !important;
-     padding: 0 !important;
- }
- .hero-section {
-    background-size: cover; !important;
-}
-.hero-premium-box {
-    background: rgba(24, 43, 29, 0.65) !important;
-    backdrop-filter: blur(1px) !important;
-    padding: 10px 25px !important;
-    border-radius: 16px !important;
-}
+         background: transparent !important;
+         margin-top: 0 !important;
+         padding: 0 !important;
+    }
+     .hero-section {
+        background-size: 100% 100% !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)), url('../../resources/background_photos/bg1_mobile.png') !important;
+    }
+    .hero-premium-box {
+        background: rgba(24, 43, 29, 0.65) !important;
+        backdrop-filter: blur(1px) !important;
+        padding: 10px 25px !important;
+        border-radius: 16px !important;
+    }
 }
 
 
