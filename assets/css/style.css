@@ -315,6 +315,7 @@ body {
 .cta-banner {
     height: 40vh;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cta-image{
@@ -594,6 +595,9 @@ body {
 
 
 @media (max-width: 767.98px) {
+    .cta-banner{
+        background-size: 100% 80% !important;
+    }
     .story-sidebar {
         position: -webkit-sticky;
         position: sticky;
@@ -602,6 +606,7 @@ body {
     }
     .story-lead{
         padding-top: 50px;
+        text-align: justify;
     }
 
     .story-main-title {
