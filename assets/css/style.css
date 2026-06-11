@@ -600,6 +600,9 @@ body {
         top: 40px; /* Text stays neatly tracked as you scroll down long paragraphs */
         height: max-content;
     }
+    .story-lead{
+        padding-top: 50px;
+    }
 
     .story-main-title {
         font-size: 2.2rem;
